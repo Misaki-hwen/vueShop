@@ -34,7 +34,7 @@ export default {
             const {data,meta:{msg,status}} = res.data
             console.log(msg,data)
             if(status == 200){
-                // this.$router.push({name:'home'})
+                this.$router.push({name:'home'})
                 this.$message.success(msg)
             }else{
                 this.$message.error(msg)
